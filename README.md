@@ -1,8 +1,8 @@
 ## hackScanner
 
-集成常见web漏洞扫描和网页爬虫
+Integrate common web vulnerability scanning and web crawler
 
-如果出现依赖不存在
+If dependency does not exist
 
 ```
 pip install -r requirements.txt
@@ -12,27 +12,26 @@ pip install -r requirements.txt
 
 #### 0x01 runserver
 
-本平台使用Django架构，启动需要切换到`manage.py`目录下，在终端输入
+This platform uses the Django architecture, you need to switch to the `manage.py` directory to start, and enter in the terminal
 
 ```
 python manage.py runserver
 ```
 
-Django会在本地`127.0.0.1:8000`启动服务
-
+DDjango will start service locally at `127.0.0.1:8000`
 
 
 #### 0x02 scanner
 
-扫描器，多线程扫描指定url的前端代码，根据后缀判断类型
+Scanner, multi-threaded and scanning front-end code of the specified url, Judge the type according to the suffix
 
-扫描文件内容，使用正则匹配，匹配模式默认写在`pattern.xml`，可通过修改`pattern.xml`文件修改或增加漏洞特征
+Scan the content of the file and use regular matching. The matching pattern is written in `pattern.xml` by default. You can modify or add vulnerability features by modifying the `pattern.xml` file
 
-使用：
+use:
 
-依照页面提示输入url和线程数，脚本会开始爬取网站前端代码资源，将资源爬完后存储到本地，开始扫描路径下文件，扫描完毕返回结果，删除下载到本地的资源
+Enter url and number of threads according to the prompts on the page, and the script will start to crawl the front-end code resources of the website, store the resources locally after crawling, start scanning the files under the path, return the results after scanning, and delete the resources downloaded locally
 
-可以点击`Download report`下载扫描结果报告，或者点击`Send to email`将报告结果推送到邮箱
+You can click `Download report` to download the scan result report, or click `Send to email` to push the report result to the mailbox
 
 
 
