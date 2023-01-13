@@ -1,0 +1,11 @@
+progressbar2
+pyOpenSSL
+colorama
+urllib3
+certifi
+markdown
+pdfkit
+reportlab
+Django
+django-werkzeug_debugger_runserver
+django_extensions
